@@ -6,11 +6,11 @@ class SumColumns {
     public static void main(String[] args) {
         int array1[] = {1, 2, 3, 4, 5};
         int array2[] = {1, 2, 3, 4, 5, 6, 7, 8};
-        Test(array1, array2);
+        sumcol(array1, array2);
 
     }
 
-    public static void Test(int[] col1, int[] col2) {
+    public static void sumcol(int[] col1, int[] col2) {
         System.out.println("COL1   " + "COL2    " + "SUM");
         if (col1.length == col2.length) {                        // если размеры массивов одинаковы
             for (int i = 0; i < col1.length; i++) {
