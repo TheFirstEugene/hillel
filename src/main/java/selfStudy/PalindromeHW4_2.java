@@ -19,7 +19,7 @@ public class PalindromeHW4_2 {
                 System.out.println("Данное слово/фраза не является полиндромом");
                 break;
             } else {
-                System.out.println("И оно является полиндромом");
+                System.out.println("Данная фраза/слово является полиндромом");
                 break;
             }
 
