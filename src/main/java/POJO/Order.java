@@ -1,4 +1,5 @@
 package POJO;
+
 import java.util.Date;
 //неизменяемый заказ
 
@@ -8,7 +9,8 @@ public class Order {
     private long customerId;
     private String adress;
 
-    public Order(){}                                                  // создал пустой для удобства
+    public Order() {
+    }                                                  // создал пустой для удобства
 
     public Order(long id, long customerId, String adress, Date date) {
         this.id = id;
@@ -18,16 +20,20 @@ public class Order {
     }
 
     public long getId() {
-        return id; }
+        return id;
+    }
 
     public Date getDate() {
-        return new Date(this.date.getTime()); }
+        return new Date(this.date.getTime());
+    }
 
     public long getCustomerId() {
-        return customerId; }
+        return customerId;
+    }
 
     public String getAdress() {
-        return adress; }
+        return adress;
+    }
 
     @Override
     public String toString() {
@@ -61,14 +67,3 @@ public class Order {
         return result;
     }
 }
-
-
-
-
-
-
-
-
-
-
-

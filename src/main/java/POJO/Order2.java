@@ -1,43 +1,55 @@
 package POJO;
+
 import java.util.Date;
 //изменяемый  заказ
 
 public class Order2 {
-     long id;                // номер заказа
-     Date date;
-     long customerId;      // номер телефона клиента(или любой другой идентификатор)
-     String adress;
+    long id;                // номер заказа
+    Date date;
+    long customerId;      // номер телефона клиента(или любой другой идентификатор)
+    String adress;
 
-     public Order2(){ }     // тоже для удобства
-     public Order2(long id, String adress, long customerId, Date date) {
+    public Order2() {
+    }     // тоже для удобства
+
+    public Order2(long id, String adress, long customerId, Date date) {
         this.id = id;
         this.date = date;
         this.customerId = customerId;
-        this.adress = adress; }
+        this.adress = adress;
+    }
 
     public long getId() {
-        return id; }
+        return id;
+    }
 
     public void setId(long id) {
-        this.id = id; }
+        this.id = id;
+    }
 
     public Date getDate() {
-        return date; }
+        return date;
+    }
 
     public void setDate(Date date) {
-        this.date = date; }
+        this.date = date;
+    }
 
     public long getCustomerId() {
-        return customerId; }
+        return customerId;
+    }
 
     public void setCustomerId(long customerId) {
-        this.customerId = customerId; }
+        this.customerId = customerId;
+    }
 
     public String getAdress() {
-        return adress; }
+        return adress;
+    }
 
     public void setAdress(String adress) {
-        this.adress = adress; }
+        this.adress = adress;
+    }
 
     @Override
     public String toString() {
