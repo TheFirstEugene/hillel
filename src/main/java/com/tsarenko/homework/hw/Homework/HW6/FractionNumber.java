@@ -88,7 +88,3 @@ public class FractionNumber implements Fraction {
         return numerator + "/" + denominator;
     }
 }
-
-
-
-
