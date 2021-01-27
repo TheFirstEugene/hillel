@@ -7,6 +7,9 @@ public class FractionNumber implements Fraction {
     private  int denominator;
 
     public FractionNumber(int a, int b) throws IllegalArgumentException {
+        if(b==0){
+            throw new IllegalArgumentException();
+        }
         this.numerator = a;
         this.denominator = b;
     }
@@ -39,6 +42,7 @@ public class FractionNumber implements Fraction {
             numerator = numerator / numerator;
         }
         return new FractionNumber(numerator, denominator);
+
     }
 
     @Override
@@ -87,4 +91,7 @@ public class FractionNumber implements Fraction {
     public String toString() {
         return numerator + "/" + denominator;
     }
+
+
+
 }
