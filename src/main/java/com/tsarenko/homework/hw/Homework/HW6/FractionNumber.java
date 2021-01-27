@@ -3,11 +3,11 @@ package com.tsarenko.homework.hw.Homework.HW6;
 import java.util.Objects;
 
 public class FractionNumber implements Fraction {
-    private  int numerator;
-    private  int denominator;
+    private int numerator;
+    private int denominator;
 
     public FractionNumber(int a, int b) throws IllegalArgumentException {
-        if(b==0){
+        if (b == 0) {
             throw new IllegalArgumentException();
         }
         this.numerator = a;
@@ -91,7 +91,6 @@ public class FractionNumber implements Fraction {
     public String toString() {
         return numerator + "/" + denominator;
     }
-
 
 
 }
