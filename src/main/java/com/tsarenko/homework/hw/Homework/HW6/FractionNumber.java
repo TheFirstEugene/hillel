@@ -91,6 +91,4 @@ public class FractionNumber implements Fraction {
     public String toString() {
         return numerator + "/" + denominator;
     }
-
-
 }
