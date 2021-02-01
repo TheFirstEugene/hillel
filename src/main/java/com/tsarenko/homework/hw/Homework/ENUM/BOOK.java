@@ -8,9 +8,9 @@ public class BOOK {
     private final String genge;
     private final long isbn;
 
-    public BOOK(Autor name, String genge, long barcode, Date date) {
+    public BOOK(Autor name, String genge, long barcode, Date issueDate) {
         this.autor = name;
-        this.issueDate = date;
+        this.issueDate = new Date(issueDate.getTime());
         this.genge = genge;
         this.isbn = barcode;
     }
