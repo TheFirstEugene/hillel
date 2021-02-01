@@ -2,13 +2,13 @@ package com.tsarenko.homework.hw.Homework.ENUM;
 
 import java.util.Date;
 
-public class BOOK {
+final class Book {
     private final Autor autor;
     private final  Date issueDate;
     private final String genge;
     private final long isbn;
 
-    public BOOK(Autor name, String genge, long barcode, Date issueDate) {
+    public Book(Autor name, String genge, long barcode, Date issueDate) {
         this.autor = name;
         this.issueDate = new Date(issueDate.getTime());
         this.genge = genge;
@@ -36,7 +36,7 @@ public class BOOK {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        BOOK book = (BOOK) o;
+        Book book = (Book) o;
 
         if (isbn != book.isbn) return false;
         if (!autor.equals(book.autor)) return false;

@@ -3,10 +3,10 @@ package com.tsarenko.homework.hw.Homework.ENUM;
 
 import java.util.Date;
 
-public class Autor {
-    String firstName;
-    String lastname;
-    Date dateOfBirth;
+final class Autor {
+    private final String firstName;
+    private final String lastname;
+    private final Date dateOfBirth;
 
 
     Autor(String name1, String name2, final Date dateOfBirth) {
