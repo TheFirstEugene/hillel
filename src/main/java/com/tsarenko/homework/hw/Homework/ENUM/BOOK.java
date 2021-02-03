@@ -4,7 +4,7 @@ import java.util.Date;
 
 final class Book {
     private final Autor autor;
-    private final  Date issueDate;
+    private final Date issueDate;
     private final String genge;
     private final long isbn;
 
