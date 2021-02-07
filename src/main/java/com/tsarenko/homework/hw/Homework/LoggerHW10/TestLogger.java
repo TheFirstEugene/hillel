@@ -9,7 +9,7 @@ public class TestLogger {
         log1.log("Error", LogLevel.DEBUG);
 
         FileLogger log2 = new FileLogger();
-        log2.log("Error", LogLevel.INFO);
+        log2.log("Error version2", LogLevel.INFO);
         log2.log("Error again .... ");
 
     }

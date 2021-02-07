@@ -14,12 +14,13 @@ public class FileLogger extends LoggerHW {
         pr.print(getDate() + ": " + messege);
         pr.close();
 
-        //Пытался сперва сделать таким путём, но оно в файл ничего не записывало
+        //Второй вариант
 
         /*Writer wr;
         try {
             wr = new FileWriter("example.txt",true);
             wr.write(getDate() + " " + messege);
+            wr.close();
         } catch (IOException e) {
             System.err.println("Error!");
         }*/
@@ -34,6 +35,7 @@ public class FileLogger extends LoggerHW {
         //Тоже самое
 
         /*Writer wr  = new FileWriter("example.txt",true);
-        wr.write(getDate() + " " + level + ": " + message);*/
+        wr.write(getDate() + " " + level + ": " + message);
+        wr.close(); */
     }
 }
