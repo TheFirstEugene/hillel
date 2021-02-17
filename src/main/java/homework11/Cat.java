@@ -1,5 +1,6 @@
 package homework11;
 
+/*
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,4 +43,4 @@ public class Cat {
             return "Сейчас в животе у нашего кота " + stomach;
         }
     }
-}
+}*/
