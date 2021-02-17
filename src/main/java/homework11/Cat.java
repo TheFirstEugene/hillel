@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Cat {
     List<Mouse> stomach = new ArrayList<>(5);
-    List substance = new ArrayList();
 
     void eat(Mouse a) {
         System.out.println("Кот съел мышь");
@@ -15,17 +14,19 @@ public class Cat {
             System.out.println("Я наелся");
     }
 
+
     void withdrawalFromTheBody() {
         stomach.remove(0);
         System.out.println("Процесс вывода прошёл удачно");
     }
 
     void takeLaxative() {
+        List substance = new ArrayList();
         substance.addAll(stomach);
         System.out.println("Кот вывел из организма всех мышей разом");
         stomach.clear();
         for (Object a : substance) {
-            if(((Mouse) a).calories==460){
+            if (((Mouse) a).calories == 460) {
                 System.out.println("Мышь которая нам нужна " + a + " была под индексом "
                         + substance.indexOf(a));
                 break;
