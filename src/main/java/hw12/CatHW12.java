@@ -9,43 +9,44 @@ public class CatHW12 {
     List<MouseHW12> stomach = new ArrayList<>(5);
 
     public boolean eat(MouseHW12 a) {
-        System.out.println("Кот съел мышь");
         if (stomach.size() < 5) {
-            return stomach.add(a);
+            stomach.add(a);
+            stomach.sort(new Comparator<MouseHW12>() {
+                @Override
+                public int compare(MouseHW12 o1, MouseHW12 o2) {
+                    if (o1.getCalories() == o2.getCalories()) return 0;
+                    else if (o1.getCalories() > o2.getCalories()) return 1;
+                    else return -1;
+                }
+            });
+            for (int i = 0; i < stomach.toArray().length; i++) {
+                stomach.get(i).getCalories();
+            }
+            return true;
+
         } else
             return false;
     }
 
 
-    void withdrawalFromTheBody() {
-        stomach.sort(new Comparator<MouseHW12>() {
-            @Override
-            public int compare(MouseHW12 o1, MouseHW12 o2) {
-                if (o1.getCalories() == o2.getCalories()) return 0;
-                else if (o1.getCalories() > o2.getCalories()) return 1;
-                else return -1;
-            }
-        });
-        for (int i = 0; i < stomach.toArray().length; i++) {
-            System.out.println(stomach.get(i).getCalories());
-        }
+    public boolean withdrawalFromTheBody() {
         stomach.remove(0);
-        System.out.println("Процесс вывода прошёл удачно");
+        return true;
 
     }
 
-    void takeLaxative() {
+    public List<MouseHW12> takeLaxative() {
         List substance = new ArrayList();
         substance.addAll(stomach);
-        System.out.println("Кот вывел из организма всех мышей разом");
         stomach.clear();
         for (Object a : substance) {
             if (((MouseHW12) a).calories == 460) {
-                System.out.println("Мышь которая нам нужна " + a + " была под индексом "
-                        + substance.indexOf(a));
-                break;
+                System.out.println(true);
+            } else {
+                System.out.println(false);
             }
         }
+        return substance;
     }
 
     @Override
@@ -56,4 +57,6 @@ public class CatHW12 {
             return "Сейчас в животе у нашего кота " + stomach;
         }
     }
+
 }
+
