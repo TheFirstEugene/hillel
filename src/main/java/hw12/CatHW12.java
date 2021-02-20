@@ -42,8 +42,6 @@ public class CatHW12 {
         for (Object a : substance) {
             if (((MouseHW12) a).calories == 460) {
                 System.out.println(true);
-            } else {
-                System.out.println(false);
             }
         }
         return substance;
