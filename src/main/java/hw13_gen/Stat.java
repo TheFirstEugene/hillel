@@ -29,7 +29,6 @@ public class Stat<T extends Number> {
         return false;
     }
 
-
     @Override
     public String toString() {
         return "Elements " + test;
