@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 public class RuntimeTest {
     public static void main(String[] args) {
         try {
-            Class<?> aClass = Class.forName("com.tsarenko.homework.hw.Homework.HW16");
+            Class<?> aClass = Class.forName("com.tsarenko.homework.hw.Homework.HW16.FractionTest");
             Method[] declaredMethods = aClass.getDeclaredMethods();
             for (Method method:declaredMethods) {
                 if (method.isAnnotationPresent(MyTest.class)){
